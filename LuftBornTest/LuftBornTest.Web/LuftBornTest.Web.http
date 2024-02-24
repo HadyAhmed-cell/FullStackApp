@@ -1,0 +1,6 @@
+@LuftBornTest.Web_HostAddress = http://localhost:5164
+
+GET {{LuftBornTest.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
