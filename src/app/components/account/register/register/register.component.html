@@ -1,0 +1,23 @@
+<div class="register-container">
+    <h2>Register</h2>
+    <form (ngSubmit)="register(registerDto)" #registerForm="ngForm">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required [(ngModel)]="registerDto.email" #emailInput="ngModel">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required [(ngModel)]="registerDto.password" #passwordInput="ngModel">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="number" id="phone" name="phone" required [(ngModel)]="registerDto.phone" #phoneInput="ngModel">
+      </div>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required [(ngModel)]="registerDto.name" #nameInput="ngModel">
+      </div>
+      <button type="submit" [disabled]="registerForm.invalid">Register</button>
+    </form>
+  </div>
+  
